@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.arpinster.wishyourdish.AboutUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/about_us_image_id"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="about us"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/about_us_image"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/about_us_text"
+                android:layout_below="@id/about_us_image_id"
+                android:textColor="@color/aboutUsColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/key_features"
+                android:text="How To Use"
+                android:layout_margin="5dp"
+                android:textColor="@color/health"
+                android:textSize="25sp"
+                android:layout_below="@id/about_us_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/how_to_use"
+                android:layout_margin="5dp"
+                android:textColor="@color/aboutUsColor"
+                android:layout_below="@id/key_features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/hacks"
+                android:text="Some useful hacks"
+                android:layout_margin="5dp"
+                android:textSize="25sp"
+                android:textColor="@color/health"
+                android:layout_below="@id/how_to_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/how_to_hack"
+                android:layout_margin="5dp"
+                android:layout_below="@id/hacks"
+                android:textColor="@color/aboutUsColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

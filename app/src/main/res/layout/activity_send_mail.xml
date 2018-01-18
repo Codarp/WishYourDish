@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/creamColor"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.arpinster.wishyourdish.SendMail">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:background="@color/creamColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/title_recipe"
+                android:text="Enter Details and press send to mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_below="@id/textView6"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_edit_text2"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/message_body"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:hint="Message Body"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject"
+                android:minLines="5"
+                android:background="@drawable/rounded_edit_text2"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_below="@id/message_body"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/mybutton2"
+                android:textAllCaps="false"
+                android:text="Send"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+</ScrollView>

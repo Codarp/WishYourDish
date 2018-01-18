@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.arpinster.wishyourdish.MainActivity"
+    android:background="@drawable/back1"
+    tools:showIn="@layout/app_bar_main">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:text="Search"
+        android:textColor="#fff"
+        android:background="@drawable/mybutton"
+        android:id="@+id/get_connection"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="46dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="350dp"
+        android:textSize="18sp"
+        android:layout_marginTop="250dp"
+        android:padding="5dp"
+        android:digits="abcdefghijklmnopqrstuvwxyz,"
+        android:hint="Seaprated by comma"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:hint="No of results"
+        android:padding="5dp"
+        android:numeric="integer"
+        android:id="@+id/to"
+        android:maxLength="3"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Filter by"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/to"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_progress"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/random"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/mybutton"
+        android:text="Suggestions"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/get_connection"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editText">
+
+        <Spinner
+            android:id="@+id/spinner_health"
+            android:layout_width="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_diet"
+            android:layout_weight="1"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_margin="10dp">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter the ingredients"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/to"
+        android:layout_toEndOf="@+id/get_connection"
+        android:layout_marginBottom="75dp" />
+
+</RelativeLayout>

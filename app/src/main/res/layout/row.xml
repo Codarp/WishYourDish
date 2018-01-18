@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/layer_list">
+
+    <ImageView
+        android:id="@+id/img"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/title_recipe"
+        android:layout_toRightOf="@id/img"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@id/img"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/health"
+        android:textColor="@color/health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ingredient"
+        android:layout_width="260dp"
+        android:maxLines="2"
+        android:layout_height="30dp"
+        android:layout_below="@+id/health" />
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1a9e0e"
+        android:textSize="12sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/ingredient"/>
+
+    <ImageButton
+        android:id="@+id/bookmark_button"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/add_icon"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/health"
+        android:focusable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>
